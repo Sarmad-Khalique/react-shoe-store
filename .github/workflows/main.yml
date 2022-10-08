@@ -37,7 +37,7 @@ jobs:
         run: yarn build
       
       - name: Install Surge
-        run: yarn add --global surge
+        run: yarn global add surge
       
       - name: Deploy on Surge
         run: surge ./build react-shoe-store-sarmad.surge.sh --token ${{secrets.SURGE_TOKEN}}
