@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 import ItemsCategoricalPreview from "./components/ItemsCategoricalPreview/ItemsCategoricalPreview";
 import ItemsPreview from "./components/ItemsPreview/ItemsPreview";
 import Navbar from "./components/Navbar/Navbar";
@@ -165,6 +166,7 @@ const App = () => {
           ))}
         </Route>
       </Routes>
+      <Footer />
     </React.Fragment>
   );
 };
