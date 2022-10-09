@@ -132,7 +132,7 @@ const App = () => {
     ],
   };
 
-  // function to map categoriesItems to items list for homepage
+  // Function to map categoriesItems to items list for homepage
   const mapCategoriesToItems = () => {
     let shoes = [];
     categories.forEach((category) => {

@@ -15,12 +15,16 @@ const ItemCard = ({ data }) => {
         rounded="lg"
         shadow="lg"
         position="relative"
+        sx={{ overflow: "hidden" }}
       >
-        <Image
-          src={data.imageURL}
-          alt={`Picture of ${data.name}`}
-          roundedTop="lg"
-        />
+        <Box sx={{ overflow: "hidden" }}>
+          <Image
+            src={data.imageURL}
+            alt={`Picture of ${data.name}`}
+            roundedTop="lg"
+            className="scale"
+          />
+        </Box>
 
         <Box p="6">
           <Flex mt="1" justifyContent="space-between" alignContent="center">
