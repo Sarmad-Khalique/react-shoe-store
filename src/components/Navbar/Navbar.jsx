@@ -14,6 +14,7 @@ import {
 import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon } from "@chakra-ui/icons";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -29,17 +30,17 @@ const Navbar = () => {
       children: [
         {
           label: "Men",
-          subLabel: "Find your dream design job",
+          subLabel: "An Exclusive Range of Men Sneakers",
           href: "/store/men",
         },
         {
           label: "Women",
-          subLabel: "An exclusive list for contract work",
+          subLabel: "An Exclusive Range of Women Shoes",
           href: "/store/women",
         },
         {
           label: "Kids",
-          subLabel: "An exclusive list for contract work",
+          subLabel: "An Exclusive Range of Kids Shoes",
           href: "/store/kids",
         },
       ],
@@ -80,7 +81,7 @@ const Navbar = () => {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            Shoe Store
+            <Link to={"/"}>Shoe Store</Link>
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>

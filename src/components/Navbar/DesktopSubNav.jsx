@@ -1,6 +1,5 @@
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
-  Link,
   Stack,
   useColorModeValue,
   Box,
@@ -8,11 +7,12 @@ import {
   Flex,
   Icon,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
     <Link
-      href={href}
+      to={href}
       role={"group"}
       display={"block"}
       p={2}

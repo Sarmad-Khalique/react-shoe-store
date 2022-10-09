@@ -4,9 +4,9 @@ import {
   useColorModeValue,
   Popover,
   PopoverTrigger,
-  Link,
   PopoverContent,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import DesktopSubNav from "./DesktopSubNav.jsx";
 
 const DesktopNav = ({ NAV_ITEMS }) => {
@@ -22,7 +22,7 @@ const DesktopNav = ({ NAV_ITEMS }) => {
             <PopoverTrigger>
               <Link
                 p={2}
-                href={navItem.href ?? "#"}
+                to={navItem.href ?? "#"}
                 fontSize={"sm"}
                 fontWeight={500}
                 color={linkColor}
